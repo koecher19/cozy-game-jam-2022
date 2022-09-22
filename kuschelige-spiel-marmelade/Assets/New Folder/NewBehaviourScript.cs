@@ -8,6 +8,7 @@ public class NewBehaviourScript : MonoBehaviour
     private Color[] Colors;
     int Width;
     int Height;
+
     void Start()
     {
         //Get objects
