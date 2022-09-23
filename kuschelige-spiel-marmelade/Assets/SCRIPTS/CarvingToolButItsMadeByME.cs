@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 
 public class CarvingToolButItsMadeByME : MonoBehaviour
 {
     public bool toolIsActive;
     public GameObject pumpkinForeground;
+    public Texture2D pumpkinForegroundTexture;
+    public BoxCollider2D pumpkinCollider;
+
+    Color clearColor;
 
     // cursor shit
     public Texture2D cursorTexture;
@@ -16,11 +22,16 @@ public class CarvingToolButItsMadeByME : MonoBehaviour
     void Start()
     {
         this.toolIsActive = false;
+        this.pumpkinForegroundTexture = this.pumpkinForeground.GetComponent<RawImage>().texture as Texture2D;
+        this.pumpkinCollider = this.pumpkinForeground.GetComponent<BoxCollider2D>();
+
+        this.clearColor = new Vector4(0f, 0f, 0f, 0f);
     }
 
     // Update is called once per frame
     void Update()
     {
+
     }
 
     public void SetToolStatus(bool active)
@@ -38,6 +49,33 @@ public class CarvingToolButItsMadeByME : MonoBehaviour
             this.cursorMode = CursorMode.Auto;
             Cursor.SetCursor(null, Vector2.zero, cursorMode);
         }
+    }
+
+    public void Carve()
+    {
+        Debug.Log("we're carving!");
+
+        if (this.toolIsActive)
+        {
+            Vector3 mousePos = Input.mousePosition;
+            int cutxValue = Convert.ToInt32(mousePos.x);
+            int cutyValue = Convert.ToInt32(mousePos.y);
+
+            int cutRadius = 5;
+
+            for (int x = cutxValue - cutRadius; x < cutxValue + cutRadius; x++)
+            {
+                for (int y = cutyValue - cutRadius; y < cutyValue + cutRadius; y++)
+                {
+                    this.pumpkinForegroundTexture.SetPixel(x, y, this.clearColor);
+                }
+            }
+
+            //this.pumpkinForegroundTexture.SetPixel(Convert.ToInt32(mousePos.x), Convert.ToInt32(mousePos.y), this.clearColor);
+
+            this.pumpkinForegroundTexture.Apply();
+        }
+
     }
 
 }
