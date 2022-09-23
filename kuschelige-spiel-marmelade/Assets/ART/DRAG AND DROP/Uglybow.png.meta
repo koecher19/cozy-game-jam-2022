@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5133f05da878aa540b4dd8c250d42eee
+guid: 5697feaebf6614a48b5503d3a5459e59
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pumpkinsmol_0
+      name: Uglybow_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 70
-        width: 213
-        height: 149
+        x: 153
+        y: 164
+        width: 50
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43f020dad7c1d6e42aa2316f1924cf7f
-      internalID: -923999254
+      spriteID: aee8e4509e921564696f82f68e4ff17b
+      internalID: -1524405843
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pumpkinsmol_0: -923999254
+      Uglybow_0: -1524405843
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
