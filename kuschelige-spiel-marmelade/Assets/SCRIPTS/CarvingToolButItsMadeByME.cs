@@ -24,14 +24,17 @@ public class CarvingToolButItsMadeByME : MonoBehaviour
 
     public void SetToolStatus(bool active)
     {
-        this.toolIsActive = active;
+        this.toolIsActive = active; // sets tool as active or inactive according to bool
+
         if (this.toolIsActive)
         {
+            this.cursorMode = CursorMode.ForceSoftware;
             this.hotSpot = new Vector2(cursorTexture.width / 2, cursorTexture.height / 2);
             Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
         }
         else if (!this.toolIsActive)
         {
+            this.cursorMode = CursorMode.Auto;
             Cursor.SetCursor(null, Vector2.zero, cursorMode);
         }
     }

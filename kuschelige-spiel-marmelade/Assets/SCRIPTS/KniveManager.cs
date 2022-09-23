@@ -22,10 +22,11 @@ public class KniveManager : MonoBehaviour
         
     }
 
-    public void PickupKnive()
+    public void PickupPutdownKnive()
     {
         if (!this.isKnivePickedUp)
         {
+            Debug.Log("pick knive up");
             this.isKnivePickedUp = true;
             // disable image in button
             this.kniveButton.GetComponent<Image>().enabled = false;
@@ -33,6 +34,16 @@ public class KniveManager : MonoBehaviour
             this.carvingManager.GetComponent<CarvingToolButItsMadeByME>().SetToolStatus(true);
             // clip image of knive to cursor
             // start mode to CUT the pumpkin! FUCK IT UP!
+        }
+
+        else if (this.isKnivePickedUp)
+        {
+            Debug.Log("put knive down");
+            this.isKnivePickedUp = false;
+            // enable image in button
+            this.kniveButton.GetComponent<Image>().enabled = true;
+            // set carving as inactive
+            this.carvingManager.GetComponent<CarvingToolButItsMadeByME>().SetToolStatus(false);
         }
     }
 }
