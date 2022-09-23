@@ -5,6 +5,7 @@ using UnityEngine;
 public class CarvingToolButItsMadeByME : MonoBehaviour
 {
     public bool toolIsActive;
+    public GameObject pumpkinForeground;
 
     // cursor shit
     public Texture2D cursorTexture;
@@ -38,4 +39,5 @@ public class CarvingToolButItsMadeByME : MonoBehaviour
             Cursor.SetCursor(null, Vector2.zero, cursorMode);
         }
     }
+
 }
