@@ -26,7 +26,6 @@ public class KniveManager : MonoBehaviour
     {
         if (!this.isKnivePickedUp)
         {
-            Debug.Log("pick knive up");
             this.isKnivePickedUp = true;
             // disable image in button
             this.kniveButton.GetComponent<Image>().enabled = false;
@@ -38,7 +37,6 @@ public class KniveManager : MonoBehaviour
 
         else if (this.isKnivePickedUp)
         {
-            Debug.Log("put knive down");
             this.isKnivePickedUp = false;
             // enable image in button
             this.kniveButton.GetComponent<Image>().enabled = true;
