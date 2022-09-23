@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dd634366824378740af328bc759144d9
+guid: 84950b2c53b61104f888fdf25b47ff04
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: loffel_leer_0
+      name: UwUCatears_0
       rect:
         serializedVersion: 2
-        x: 70
-        y: 37
-        width: 52
-        height: 34
+        x: 64
+        y: 170
+        width: 47
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69c81ec75fe76a948a05f462cdde206f
-      internalID: 1282417863
+      spriteID: 4dfdc987424816a4fa9ec01fe1db4fd7
+      internalID: -208297699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UwUCatears_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 179
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3d463e4c4bcd64ebcf45b43649a388
+      internalID: 351378324
       vertices: []
       indices: 
       edges: []
@@ -147,7 +168,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      loffel_leer_0: 1282417863
+      UwUCatears_0: -208297699
+      UwUCatears_1: 351378324
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
