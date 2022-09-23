@@ -41,7 +41,8 @@ public class CarvingToolButItsMadeByME : MonoBehaviour
         if (this.toolIsActive)
         {
             this.cursorMode = CursorMode.ForceSoftware;
-            this.hotSpot = new Vector2(cursorTexture.width / 2, cursorTexture.height / 2);
+            // this.hotSpot = new Vector2(cursorTexture.width / 2f, cursorTexture.height / 2);
+            this.hotSpot = new Vector2(0f, 0f);
             Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
         }
         else if (!this.toolIsActive)
@@ -58,10 +59,10 @@ public class CarvingToolButItsMadeByME : MonoBehaviour
         if (this.toolIsActive)
         {
             Vector3 mousePos = Input.mousePosition;
-            int cutxValue = Convert.ToInt32(mousePos.x);
-            int cutyValue = Convert.ToInt32(mousePos.y);
+            int cutxValue = Convert.ToInt32(mousePos.x/2);
+            int cutyValue = Convert.ToInt32(mousePos.y/2);
 
-            int cutRadius = 5;
+            int cutRadius = 2;
 
             for (int x = cutxValue - cutRadius; x < cutxValue + cutRadius; x++)
             {
