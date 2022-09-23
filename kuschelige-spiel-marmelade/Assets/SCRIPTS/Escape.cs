@@ -18,13 +18,14 @@ public class Escape : MonoBehaviour
         {
             // press esc any time to return to the main menu
             // diable special cursor
-            if ((SceneManager.GetActiveScene().name == "CARVING"))
+            if (SceneManager.GetActiveScene().name == "CARVING")
             {
                 if (GameObject.Find("KniveManager").GetComponent<KniveManager>().isKnivePickedUp)
                 {
                     GameObject.Find("KniveManager").GetComponent<KniveManager>().PickupPutdownKnive();
                 }
             }
+
             GetComponent<SceneLoading>().loadScene(0);
         }
     }
