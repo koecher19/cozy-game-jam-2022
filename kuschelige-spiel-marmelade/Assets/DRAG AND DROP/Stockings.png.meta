@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c29ca5624011c544192ab56474dfb369
+guid: 4beea7319fe4ab74b83d8c504387c8d6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Viereck_0
+      name: stockingssabbersabber_getrennt_0
       rect:
         serializedVersion: 2
-        x: 71
-        y: 173
-        width: 39
-        height: 39
+        x: 47
+        y: 39
+        width: 70
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca6a9259698ace9448836c9b51c9e84b
-      internalID: -1215575429
+      spriteID: c75e004fb4ad1414fbcfc1f1f9b20762
+      internalID: 182134667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stockingssabbersabber_getrennt_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 40
+        width: 38
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38067dc466abf5248afb04e82a13b837
+      internalID: 1678127875
       vertices: []
       indices: 
       edges: []
@@ -147,7 +168,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Viereck_0: -1215575429
+      stockingssabbersabber_getrennt_0: 182134667
+      stockingssabbersabber_getrennt_1: 1678127875
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
