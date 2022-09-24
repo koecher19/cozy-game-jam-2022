@@ -1,46 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BorderOnHover : MonoBehaviour
 {
     Material material;
 
-    bool isHoveredOver = true;
-    float fade = 1f;
+    bool isHoveredOver;
+    public float fade;
     
     void Start()
     {
-        material = GetComponent<SpriteRenderer>().material;
+        this.fade = 0f;
+        this.isHoveredOver = false;
+        this.material = this.GetComponent<Image>().material;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        if (this.isHoveredOver == false)
         {
-            isHoveredOver = !isHoveredOver;
-        }
-// && fade !<= 0f
-        if (!isHoveredOver)
-        {
-            fade -= Time.deltaTime;
+            this.fade -= Time.deltaTime*2;
 
             if(fade <= 0f)
             {
                 fade = 0f;
+                isHoveredOver = false;
             }
-            material.SetFloat("_Thicknes", fade);
+            this.material.SetFloat("_Thicknes", fade);
         }
 
     }
 
     public void OnButtonCursorEnter()
     {
-        material.SetFloat("_Thicknes", 1f);
+        this.isHoveredOver = true;
+        this.material.SetFloat("_Thicknes", 1f);
     }
     public void OnButtonCursorExit()
     {
-        fade = 1f;
+        this.isHoveredOver = false;
+        this.fade = 1f;
     }                         
 }
