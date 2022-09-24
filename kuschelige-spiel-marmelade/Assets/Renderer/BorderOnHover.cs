@@ -7,21 +7,20 @@ public class BorderOnHover : MonoBehaviour
 {
     Material material;
 
-    bool isHoveredOver;
-    public float fade;
+    private bool isHoveredOver = true;
+    private float fade;
     
     void Start()
     {
         this.fade = 0f;
-        this.isHoveredOver = false;
         this.material = this.GetComponent<Image>().material;
     }
 
-    // Update is called once per frame
+    // Update is called once per frame _
     void Update()
     {
 
-        if (this.isHoveredOver == false)
+        if (!this.isHoveredOver)
         {
             this.fade -= Time.deltaTime*2;
 
@@ -38,11 +37,11 @@ public class BorderOnHover : MonoBehaviour
     public void OnButtonCursorEnter()
     {
         this.isHoveredOver = true;
-        this.material.SetFloat("_Thicknes", 1f);
+        this.material.SetFloat("_Thicknes", 2);
     }
     public void OnButtonCursorExit()
     {
         this.isHoveredOver = false;
-        this.fade = 1f;
+        this.fade = 2f;
     }                         
 }
