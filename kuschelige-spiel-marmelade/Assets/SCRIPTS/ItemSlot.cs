@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
+    // Function, so u can let the item snatch to the Box
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("OnDrop");
