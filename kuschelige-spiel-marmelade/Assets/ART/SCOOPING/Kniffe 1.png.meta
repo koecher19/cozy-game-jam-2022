@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 339f6e44829316c44af8beed2c72ed2b
+guid: d699be9b6c8ba6f4ba3436e0fb2fbaf0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -126,7 +126,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Kniffe 1_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 65
+        width: 82
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f630c333d1a589148a188d6756469491
+      internalID: -64895917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -137,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Kniffe 1_0: -64895917
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
