@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c29ca5624011c544192ab56474dfb369
+guid: 5f652c5f66134ae409c4da4b7eca6947
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Viereck_0
+      name: HexerInnen_Hut_0
       rect:
         serializedVersion: 2
-        x: 71
-        y: 173
-        width: 39
-        height: 39
+        x: 27
+        y: 273
+        width: 202
+        height: 118
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca6a9259698ace9448836c9b51c9e84b
-      internalID: -1215575429
+      spriteID: 0dd48df206b5bd14fa818bd1735d0daf
+      internalID: -2109712476
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Viereck_0: -1215575429
+      HexerInnen_Hut_0: -2109712476
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
