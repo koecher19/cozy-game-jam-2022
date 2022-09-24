@@ -35,9 +35,12 @@ public class MovePumpkinHatAround : MonoBehaviour
 
     void OnMouseUp()
     {
-        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        if (!this.buttonManager.GetComponent<ButtonManager>().isSpoonActive && !this.buttonManager.GetComponent<ButtonManager>().isKniveActive)
+        {
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 
-        // now up to phase 2!!
-        this.sceneManager.GetComponent<ScrapingoutPimpkinScript>().ChangeToPhase(2);
+            // now up to phase 2!!
+            this.sceneManager.GetComponent<ScrapingoutPimpkinScript>().ChangeToPhase(2);
+        }
     }
 }

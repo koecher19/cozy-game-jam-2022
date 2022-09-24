@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sch\xFCssel"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -295,8 +295,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 173.87, y: -166.02}
-  m_SizeDelta: {x: 172.58, y: 41.12}
+  m_AnchoredPosition: {x: 140.32, y: -152.25}
+  m_SizeDelta: {x: 281.58, y: 55.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &137561279
 MonoBehaviour:
@@ -632,11 +632,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpoonActive: 0
+  isFullSpoonActive: 0
   isKniveActive: 0
   knifeCursor: {fileID: 2800000, guid: 64f5200db8c289d4bb535706605f58b9, type: 3}
   spoonCursor: {fileID: 2800000, guid: dcefe693ee0cec142a1cd31ba4817814, type: 3}
+  fullSpoonCursor: {fileID: 2800000, guid: 5cb2cd0e6b68df84cbf621eea1e07edb, type: 3}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
+  pumpkinBootySprites: {fileID: 712536830}
+  bowlSprite: {fileID: 251941937}
 --- !u!1 &251941937
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 251941938}
   - component: {fileID: 251941939}
+  - component: {fileID: 251941940}
   m_Layer: 0
   m_Name: schussel_leer_0
   m_TagString: Untagged
@@ -662,7 +667,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251941937}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.15, y: -3.95, z: 0}
+  m_LocalPosition: {x: -3.82, y: 0.06, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -710,17 +715,33 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1727489805, guid: 2eb5cc9e56685924cbad64d0e52b03f6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2eb5cc9e56685924cbad64d0e52b03f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.87, y: 0.55}
+  m_Size: {x: 2.5, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &251941940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251941937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4da08471ab545c54fa0ef643be6f14dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  maxState: 3
+  SceneManager: {fileID: 747041280}
+  fullBowl: {fileID: 21300000, guid: c313f3840c717d840aa0f869a0b511d1, type: 3}
 --- !u!1 &346432983
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,7 +800,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: pumpkin booty
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -870,7 +891,7 @@ GameObject:
   - component: {fileID: 404830190}
   - component: {fileID: 404830191}
   m_Layer: 0
-  m_Name: pumpkinroundlid_0
+  m_Name: PumpkinHat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -884,7 +905,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404830186}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.013, y: 2.557, z: 0}
+  m_LocalPosition: {x: 0, y: 2.557, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1125,8 +1146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18, y: 107}
-  m_SizeDelta: {x: 349.19, y: 283.24}
+  m_AnchoredPosition: {x: 18, y: 137.99}
+  m_SizeDelta: {x: 349.19, y: 345.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593288128
 MonoBehaviour:
@@ -1171,7 +1192,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 593288129}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 206959723}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: ScoopOutPumpkinBooty
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &593288129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1287,8 +1320,9 @@ GameObject:
   m_Component:
   - component: {fileID: 712536831}
   - component: {fileID: 712536832}
+  - component: {fileID: 712536833}
   m_Layer: 0
-  m_Name: pumpkinroundbody 1
+  m_Name: PumpkinBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1302,7 +1336,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712536830}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0232, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1361,6 +1395,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &712536833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712536830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc1ff8630f183944afc6ad02e4c4d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pumpkinStates:
+  - {fileID: 21300000, guid: ed0fa0dd590109147b97a99153b5ef93, type: 3}
+  - {fileID: 21300000, guid: 88d8b380206d6d548a1dcd514aa39156, type: 3}
+  - {fileID: 21300000, guid: 339f6e44829316c44af8beed2c72ed2b, type: 3}
+  - {fileID: 21300000, guid: 32d02ba141833ba4a97d59cf25a97899, type: 3}
+  - {fileID: 21300000, guid: 354454af4e0712146b21fc4e0454a5ee, type: 3}
+  countOfStates: 0
+  currentState: 0
 --- !u!1 &747041280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,6 +1488,9 @@ MonoBehaviour:
   phase: 0
   pumpkinLid: {fileID: 404830186}
   cutHere: {fileID: 1447585380}
+  pumpkinBootyButton: {fileID: 593288126}
+  pumpkinBootySprites: {fileID: 712536830}
+  bowlButton: {fileID: 1936999380}
 --- !u!1 &1005344838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,7 +1547,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038267917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05, y: 1.25, z: 0}
+  m_LocalPosition: {x: 0, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1982,7 +2039,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "L\xF6ff\xF6l"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2223,7 +2280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: messa
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2337,8 +2394,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 169, y: -252}
-  m_SizeDelta: {x: 136.61, y: 56.44}
+  m_AnchoredPosition: {x: 145.47, y: -244.54}
+  m_SizeDelta: {x: 183.66, y: 68.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1695574199
 MonoBehaviour:
@@ -2607,8 +2664,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -125, y: -229}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -125, y: -199.73}
+  m_SizeDelta: {x: 160, y: 46.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1936999382
 MonoBehaviour:
@@ -2653,7 +2710,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1936999383}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 206959723}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: ScoopIntoBowl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1936999383
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,6 +24,9 @@ public class Escape : MonoBehaviour
                 {
                     GameObject.Find("KniveManager").GetComponent<KniveManager>().PickupPutdownKnive();
                 }
+            }else if(SceneManager.GetActiveScene().name == "SPOONING")
+            {
+                GameObject.Find("ButtonManager").GetComponent<ButtonManager>().ChangeCursorToDefault();
             }
 
             GetComponent<SceneLoading>().loadScene(0);
