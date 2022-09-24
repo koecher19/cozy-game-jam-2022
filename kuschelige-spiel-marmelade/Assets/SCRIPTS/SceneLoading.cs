@@ -19,6 +19,10 @@ public class SceneLoading : MonoBehaviour
 
     public void loadScene(int index)
     {
+        // set cursor to default (just in case)
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+
+        //load next scene
         SceneManager.LoadScene(index);
     }
 

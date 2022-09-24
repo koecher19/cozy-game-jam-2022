@@ -12,6 +12,7 @@ public class ScrapingoutPimpkinScript : MonoBehaviour
     phase 1: remove the top from pumpkin
     phase 2: remove innards from pumpkin
     phase 3: put pumpkin head back on
+    phase 4: display button to jump to next scene
      */
 
     public GameObject pumpkinLid;
@@ -19,11 +20,13 @@ public class ScrapingoutPimpkinScript : MonoBehaviour
     public GameObject pumpkinBootyButton;
     public GameObject pumpkinBootySprites;
     public GameObject bowlButton;
+    public GameObject carvingButton;
 
     // Start is called before the first frame update
     void Start()
     {
         ChangeToPhase(0);
+        this.carvingButton.SetActive(false);
 
     }
 
@@ -69,6 +72,16 @@ public class ScrapingoutPimpkinScript : MonoBehaviour
                 // disable everything that isnt used for phase 3:
                 this.pumpkinBootyButton.GetComponent<Button>().enabled = false;
                 this.bowlButton.GetComponent<Button>().enabled = false;
+                this.pumpkinLid.GetComponent<MovePumpkinHatAround>().putHatBackOnPumpkin = true;
+                break;
+            case 4:
+                this.phase = 4;
+                this.pumpkinLid.GetComponent<BoxCollider2D>().enabled = false;
+                this.pumpkinBootyButton.GetComponent<Button>().enabled = false;
+                this.bowlButton.GetComponent<Button>().enabled = false;
+                this.cutHere.GetComponent<BoxCollider2D>().enabled = false;
+
+                this.carvingButton.SetActive(true);
                 break;
             default:
                 Debug.LogError("ChangePhaseTo() --> not a valid phase!");
