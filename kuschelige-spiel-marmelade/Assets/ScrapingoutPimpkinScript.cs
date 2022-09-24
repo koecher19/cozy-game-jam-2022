@@ -48,6 +48,9 @@ public class ScrapingoutPimpkinScript : MonoBehaviour
                 break;
             case 2:
                 this.phase = 2;
+                // disable everything that isnt used for phase 2:
+                //this.pumpkinLid.GetComponent<BoxCollider2D>().enabled = false;
+                this.cutHere.GetComponent<BoxCollider2D>().enabled = false;
                 break;
             case 3:
                 this.phase = 3;
