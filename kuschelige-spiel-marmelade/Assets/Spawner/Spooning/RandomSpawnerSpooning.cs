@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomSpawner : MonoBehaviour
+public class RandomSpawnerSpooning : MonoBehaviour
 {
     [Header("Spawn Object")]
     public List<GameObject> ObjectsToSpawn;
@@ -42,6 +42,5 @@ public class RandomSpawner : MonoBehaviour
             SpawnPosition = SpawnLocationObjects[((int)chooosenPumpkin)].transform.position;
             SpawnRotation = SpawnLocationObjects[((int)chooosenPumpkin)].transform.rotation;
             Instantiate(ObjectsToSpawn[((int)chooosenPumpkin)], SpawnPosition, SpawnRotation, SpawnParent.transform);
-            AudioSource.PlayClipAtPoint(ListOfSpeechSounds[((int)chooosenPumpkin)], SpawnPosition);
     }
 }

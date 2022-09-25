@@ -10,8 +10,6 @@ public class RandomTexting : MonoBehaviour
     private float currentTimeUntilDisappearing;
     private TextMeshProUGUI Speechbubble;
     public List<string> StringList;
-    private int IDCurrentTextDisplayed = 0;
-    private bool randomOutput = false;
     public GameObject parentObjectToDisappear;
     [Header("Spawner Reference")]
     public Spawner spawner;
