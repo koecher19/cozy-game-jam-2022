@@ -70,8 +70,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 35a6df7e9ec84974f9e00f51da62575c, type: 2}
-  m_sharedMaterial: {fileID: 1745277090280367206, guid: 35a6df7e9ec84974f9e00f51da62575c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -151,10 +151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeTillChange: 7
   StringList:
-  - "OH! FINALLY! I GOT PICKED! I\u2019VE WAITED SUCH A LONG TIME!  \\n(^-^)"
-  - "I\u2019M HIMBO! \\no(>w<)o"
+  - "OH! FINALLY! I GOT PICKED! I\u2019VE WAITED SUCH A LONG TIME! (^-^)"
+  - "I\u2019M HIMBO! o(>w<)o"
   - "I CAN\u2019T WAIT TO SEE  HOW YOU\u2019RE GOING TO PIMP ME UP: I WANNA BE A
-    FIERCE QUEEN! \\n(o\u201Dw\u201Do)"
+    FIERCE QUEEN! (o\u201Dw\u201Do)"
   NextSceneIndex: 2
 --- !u!114 &4114831829134424064
 MonoBehaviour:
