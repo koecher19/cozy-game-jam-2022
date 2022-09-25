@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ClicktobigforsmollerObjects : MonoBehaviour
+public class ClicktobigforsmollerObjects : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     // Refer to the Canvas Group put into one Item
     [SerializeField] 

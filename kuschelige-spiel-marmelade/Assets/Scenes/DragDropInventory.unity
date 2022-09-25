@@ -844,6 +844,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1036832259}
     m_Modifications:
     - target: {fileID: 8082897648173317348, guid: 0e5204c1ac3dd2b4487ca0e3d5704676, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1036832258}
+    - target: {fileID: 8082897648173317348, guid: 0e5204c1ac3dd2b4487ca0e3d5704676, type: 3}
       propertyPath: newScale
       value: 0.3
       objectReference: {fileID: 0}
@@ -2006,6 +2010,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1036832259}
     m_Modifications:
+    - target: {fileID: 8082897648173317348, guid: 0e5204c1ac3dd2b4487ca0e3d5704676, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1036832258}
     - target: {fileID: 8082897648173317348, guid: 0e5204c1ac3dd2b4487ca0e3d5704676, type: 3}
       propertyPath: newScale
       value: 0.3
