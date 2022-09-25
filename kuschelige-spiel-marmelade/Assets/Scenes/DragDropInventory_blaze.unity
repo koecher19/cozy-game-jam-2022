@@ -1038,7 +1038,6 @@ GameObject:
   - component: {fileID: 930868013}
   - component: {fileID: 930868017}
   - component: {fileID: 930868016}
-  - component: {fileID: 930868015}
   - component: {fileID: 930868014}
   m_Layer: 5
   m_Name: pumpkin front texture
@@ -1093,20 +1092,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 378.75616, y: 452.72803}
   m_EdgeRadius: 0
---- !u!114 &930868015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930868012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4f8f89d9e90a724bb7f06ee8ff4993b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carvingManager: {fileID: 0}
-  noiseManager: {fileID: 0}
 --- !u!114 &930868016
 MonoBehaviour:
   m_ObjectHideFlags: 0
