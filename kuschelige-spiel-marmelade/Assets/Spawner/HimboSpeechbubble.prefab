@@ -165,7 +165,6 @@ GameObject:
   - component: {fileID: 2022351985668013044}
   - component: {fileID: 988667953712155529}
   - component: {fileID: 2263743670972622173}
-  - component: {fileID: 6451137027506777567}
   m_Layer: 5
   m_Name: HimboSpeechbubble
   m_TagString: Untagged
@@ -232,20 +231,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6451137027506777567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6227346626727011623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3866b5f1935322f428e8b9421abd0594, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeTillChange: 0
-  StringList:
-  - 
-  - 
-  - 
