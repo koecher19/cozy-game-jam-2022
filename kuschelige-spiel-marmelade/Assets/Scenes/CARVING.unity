@@ -406,6 +406,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1140554338}
     - target: {fileID: -9063951462144581897, guid: d9420c0d43363d6448ab40cf35a281dc, type: 3}
+      propertyPath: chooosenPumpkin
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9063951462144581897, guid: d9420c0d43363d6448ab40cf35a281dc, type: 3}
       propertyPath: SpawnLocationObjects.Array.data[0]
       value: 
       objectReference: {fileID: 1093206946}
@@ -467,6 +471,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9420c0d43363d6448ab40cf35a281dc, type: 3}
+--- !u!1 &614169189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3755537473167511926, guid: d9420c0d43363d6448ab40cf35a281dc, type: 3}
+  m_PrefabInstance: {fileID: 614169188}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &614169190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614169189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50762a947c592934cb0d611d7a97d001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomSpawnerSpooning: {fileID: 614169191}
+  minWait: 4
+  maxWait: 10
+--- !u!114 &614169191 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9063951462144581897, guid: d9420c0d43363d6448ab40cf35a281dc, type: 3}
+  m_PrefabInstance: {fileID: 614169188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614169189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab14f74b5bcdca6428b2f1f07e01dee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &742481467
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,8 +708,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: decorating
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1119,7 +1154,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1473295173
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1064d44ac61515d4a975d5ad30cf4d78, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
