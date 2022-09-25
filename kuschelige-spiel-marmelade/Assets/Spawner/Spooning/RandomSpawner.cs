@@ -16,6 +16,7 @@ public class RandomSpawner : MonoBehaviour
     public GameObject SpawnParent;
     [Header("Logical Operator")]
     public Pumpkins chooosenPumpkin;
+    public bool test = false;
     public enum Pumpkins
     {
         BLAZE = 0,
@@ -30,7 +31,10 @@ public class RandomSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (test)
+        {
+            SpawnSpeechbubble();
+        }
     }
 
     public void SpawnSpeechbubble()
