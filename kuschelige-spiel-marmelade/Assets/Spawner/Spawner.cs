@@ -15,11 +15,8 @@ public class Spawner : MonoBehaviour
     [Header("Target Canvas")]
     public GameObject SpawnParent;
     [Header("Logical Operator")]
-    public Pumpkins chooosenPumpkin;
-    [Header("Spawner Reference")]
-    public Spawner spawner;
-    public enum Pumpkins
-    {
+    public Pumpkins pumpkin;
+    public enum Pumpkins{
         BLAZE = 0,
         HIMBO = 1,
         TSUNDARA = 2
@@ -27,19 +24,15 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+            SpawnPosition = SpawnLocationObjects[((int)pumpkin)].transform.position;
+            SpawnRotation = SpawnLocationObjects[((int)pumpkin)].transform.rotation;
+            Instantiate(ObjectsToSpawn[((int)pumpkin)], SpawnPosition, SpawnRotation, SpawnParent.transform) ;
+            AudioSource.PlayClipAtPoint(ListOfSpeechSounds[((int)pumpkin)], SpawnPosition);
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    public void SpawnSpeechbubble()
-    {
-            SpawnPosition = SpawnLocationObjects[((int)chooosenPumpkin)].transform.position;
-            SpawnRotation = SpawnLocationObjects[((int)chooosenPumpkin)].transform.rotation;
-            Instantiate(ObjectsToSpawn[((int)chooosenPumpkin)], SpawnPosition, SpawnRotation, SpawnParent.transform);
-            AudioSource.PlayClipAtPoint(ListOfSpeechSounds[((int)chooosenPumpkin)], SpawnPosition);
     }
 }
