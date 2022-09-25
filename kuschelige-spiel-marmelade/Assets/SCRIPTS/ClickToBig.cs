@@ -9,8 +9,8 @@ public class ClickToBig : MonoBehaviour
 
     void Start()
     {
-        bigScale = new Vector3(3f, 3f, 3f);
-        smallScale = new Vector3(1f, 1f, 1f);
+        bigScale = new Vector3(2f, 2f, 2f);
+        smallScale = new Vector3(1.5f, 1.5f, 1.5f);
         isBig = true;
     }
 
