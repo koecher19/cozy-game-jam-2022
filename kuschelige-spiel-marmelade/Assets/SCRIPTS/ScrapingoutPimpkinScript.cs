@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScrapingoutPimpkinScript : MonoBehaviour
 {
     [SerializeField] // (makes private variables, methods visible in the inspector)
-    int phase;
+    //int phase;
     /*
     phase 0: cut off the top
     phase 1: remove the top from pumpkin
@@ -43,7 +43,7 @@ public class ScrapingoutPimpkinScript : MonoBehaviour
         switch (phaseToChangeTo)
         {
             case 0:
-                this.phase = 0;
+                //this.phase = 0;
                 // disable everything that isnt used for phase 0:
                 this.pumpkinLid.GetComponent<BoxCollider2D>().enabled = false;
                 this.pumpkinBootyButton.GetComponent<Button>().enabled = false;
@@ -52,7 +52,7 @@ public class ScrapingoutPimpkinScript : MonoBehaviour
                 this.cutHere.GetComponent<BoxCollider2D>().enabled = true;
                 break;
             case 1:
-                this.phase = 1;
+                //this.phase = 1;
                 // disable everything that isnt used for phase 1:
                 this.pumpkinBootyButton.GetComponent<Button>().enabled = false;
                 this.cutHere.GetComponent<BoxCollider2D>().enabled = false;
@@ -61,7 +61,7 @@ public class ScrapingoutPimpkinScript : MonoBehaviour
                 this.pumpkinLid.GetComponent<BoxCollider2D>().enabled = true;
                 break;
             case 2:
-                this.phase = 2;
+                //this.phase = 2;
                 // disable everything that isnt used for phase 2:
                 //this.pumpkinLid.GetComponent<BoxCollider2D>().enabled = false; // <-- turns off collision too quikly and pumpkin falls through the table
                 this.cutHere.GetComponent<BoxCollider2D>().enabled = false;
@@ -74,14 +74,14 @@ public class ScrapingoutPimpkinScript : MonoBehaviour
                 }
                 break;
             case 3:
-                this.phase = 3;
+                //this.phase = 3;
                 // disable everything that isnt used for phase 3:
                 this.pumpkinBootyButton.GetComponent<Button>().enabled = false;
                 this.bowlButton.GetComponent<Button>().enabled = false;
                 this.pumpkinLid.GetComponent<MovePumpkinHatAround>().putHatBackOnPumpkin = true;
                 break;
             case 4:
-                this.phase = 4;
+                //this.phase = 4;
                 this.pumpkinLid.GetComponent<BoxCollider2D>().enabled = false;
                 this.pumpkinBootyButton.GetComponent<Button>().enabled = false;
                 this.bowlButton.GetComponent<Button>().enabled = false;

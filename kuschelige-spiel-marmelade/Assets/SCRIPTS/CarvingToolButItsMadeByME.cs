@@ -60,7 +60,7 @@ public class CarvingToolButItsMadeByME : MonoBehaviour
         {
             Vector3 mousePos = Input.mousePosition;
             int cutxValue = Convert.ToInt32(mousePos.x/2);
-            int cutyValue = Convert.ToInt32(mousePos.y/2);
+            int cutyValue = Convert.ToInt32(mousePos.y/2) -50;  // bc pumpkin is positioned at y=100
 
             int cutRadius = 2;
 

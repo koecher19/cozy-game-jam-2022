@@ -23,7 +23,10 @@ public class CollisionDetection : MonoBehaviour
     {
         //Debug.Log("clicked on pumpkin hehe");
         this.carvingManager.GetComponent<CarvingToolButItsMadeByME>().Carve();
-        this.noiseManager.GetComponent<NoiseManager>().PlayCarvingNoise();
+        if (this.carvingManager.GetComponent<CarvingToolButItsMadeByME>().toolIsActive)
+        {
+            this.noiseManager.GetComponent<NoiseManager>().PlayCarvingNoise();
+        }
     }
     void OnMouseDrag()
     {
