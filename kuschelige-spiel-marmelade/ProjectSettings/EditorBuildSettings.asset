@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CARVING.unity
     guid: 886037a93e8f1844ba762e78820572ff
+  - enabled: 1
+    path: Assets/Scenes/DragDropInventory.unity
+    guid: 4b98919a1610f2c408de17273c45cfe5
   m_configObjects: {}
