@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class CarvingToolButItsMadeByME : MonoBehaviour
 {
@@ -58,17 +59,35 @@ public class CarvingToolButItsMadeByME : MonoBehaviour
 
         if (this.toolIsActive)
         {
-            Vector3 mousePos = Input.mousePosition;
-            int cutxValue = Convert.ToInt32(mousePos.x/2);
-            int cutyValue = Convert.ToInt32(mousePos.y/2) -50;  // bc pumpkin is positioned at y=100
-
-            int cutRadius = 2;
-
-            for (int x = cutxValue - cutRadius; x < cutxValue + cutRadius; x++)
+            if (SceneManager.GetActiveScene().name == "CARVING_tsundara")
             {
-                for (int y = cutyValue - cutRadius; y < cutyValue + cutRadius; y++)
+                Vector3 mousePos = Input.mousePosition;
+                int cutxValue = Convert.ToInt32(mousePos.x / 2) +4; // x = -8
+                int cutyValue = Convert.ToInt32(mousePos.y / 2) - 91;  // bc pumpkin is positioned at y=182
+                int cutRadius = 2;
+
+                for (int x = cutxValue - cutRadius; x < cutxValue + cutRadius; x++)
                 {
-                    this.pumpkinForegroundTexture.SetPixel(x, y, this.clearColor);
+                    for (int y = cutyValue - cutRadius; y < cutyValue + cutRadius; y++)
+                    {
+                        this.pumpkinForegroundTexture.SetPixel(x, y, this.clearColor);
+                    }
+                }
+            }
+            else
+            {
+                Vector3 mousePos = Input.mousePosition;
+                int cutxValue = Convert.ToInt32(mousePos.x / 2);
+                int cutyValue = Convert.ToInt32(mousePos.y / 2) - 50;  // bc pumpkin is positioned at y=100
+
+                int cutRadius = 2;
+
+                for (int x = cutxValue - cutRadius; x < cutxValue + cutRadius; x++)
+                {
+                    for (int y = cutyValue - cutRadius; y < cutyValue + cutRadius; y++)
+                    {
+                        this.pumpkinForegroundTexture.SetPixel(x, y, this.clearColor);
+                    }
                 }
             }
 
