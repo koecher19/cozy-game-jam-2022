@@ -9,6 +9,7 @@ public class FillThatShitUp_theBowlIfAnyoneIsAsking : MonoBehaviour
     // Start is called before the first frame update
     public GameObject SceneManager;
     public Sprite fullBowl;
+    public GameObject noiseManager;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class FillThatShitUp_theBowlIfAnyoneIsAsking : MonoBehaviour
             {
                 GetComponent<SpriteRenderer>().sprite = this.fullBowl;
                 this.SceneManager.GetComponent<ScrapingoutPimpkinScript>().ChangeToPhase(3);
+                this.noiseManager.GetComponent<NoiseManager>().PlayPlopNoise();
             }
         }
     }
