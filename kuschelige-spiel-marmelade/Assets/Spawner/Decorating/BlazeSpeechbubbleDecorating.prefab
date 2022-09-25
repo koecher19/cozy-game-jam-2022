@@ -150,10 +150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeTillChange: 7
   StringList:
-  - "yoooooooooooo\u2026 dude! Real\u2019 chill of you to pick me up ;-)"
-  - Hehe. Name is Blaze. You probably know why. *zwinkie zwonkie*
-  - "Let\u2019s gooo!... Do you know where we are going?"
-  NextSceneIndex: 1
+  - "WOAH! I did not look this good since\u2026.huh? What were we talking about?"
+  - 'I have the feeling that I should thank you: Thank you.'
 --- !u!1 &1924192760926253791
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,7 +164,7 @@ GameObject:
   - component: {fileID: 1518780367471240965}
   - component: {fileID: 1989301873456072886}
   m_Layer: 5
-  m_Name: BlazeSpeechbubble
+  m_Name: BlazeSpeechbubbleDecorating
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

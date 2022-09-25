@@ -11,6 +11,7 @@ public class TimedTexting : MonoBehaviour
     private TextMeshProUGUI Speechbubble;
     public List<string> StringList;
     private int IDCurrentTextDisplayed = 0;
+    public int NextSceneIndex;
 
     
     // Start is called before the first frame update
