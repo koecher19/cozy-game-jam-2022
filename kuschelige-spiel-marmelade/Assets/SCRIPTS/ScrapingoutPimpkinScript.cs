@@ -65,7 +65,10 @@ public class ScrapingoutPimpkinScript : MonoBehaviour
                 // enable everything that is used for phase 2:
                 this.pumpkinBootyButton.GetComponent<Button>().enabled = true;
                 this.bowlButton.GetComponent<Button>().enabled = true;
-                this.pumpkinBootySprites.GetComponent<FlipThroughPumpkinsWhileScooping>().NextState();
+                if(this.pumpkinBootySprites.GetComponent<FlipThroughPumpkinsWhileScooping>().currentState <= 0)
+                {
+                    this.pumpkinBootySprites.GetComponent<FlipThroughPumpkinsWhileScooping>().NextState();
+                }
                 break;
             case 3:
                 this.phase = 3;
