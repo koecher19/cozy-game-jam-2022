@@ -118,19 +118,19 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Colors.m_DisabledColor.r
-    value: 1
+    value: 0.78431374
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Colors.m_DisabledColor.g
-    value: 1
+    value: 0.78431374
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Colors.m_DisabledColor.b
-    value: 1
+    value: 0.78431374
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Colors.m_DisabledColor.a
-    value: 1
+    value: 0.5019608
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Colors.m_ColorMultiplier
