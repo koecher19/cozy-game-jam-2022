@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class ScaleFix : MonoBehaviour
 {
+    public float newScale = 1.6f;
     // Start is called before the first frame update
     private Vector3 scaleVector;
     void Start()
     {
-        scaleVector.Set(1.6f, 1.6f, 1);
+        scaleVector.Set(newScale, newScale, 1);
         this.transform.localScale = scaleVector;
     }
 
