@@ -27,12 +27,12 @@ public class MovePumpkinHatAround : MonoBehaviour
     {
         if(!this.buttonManager.GetComponent<ButtonManager>().isSpoonActive && !this.buttonManager.GetComponent<ButtonManager>().isKniveActive) // player can only drag hat around if their hands are free
         {
-            Debug.Log("yes");
+            //Debug.Log("yes");
             Vector3 mousePos = Input.mousePosition;
-            Debug.Log(mousePos);
+            //Debug.Log(mousePos);
             //this.transform.position = new Vector3(mousePos.x - 250, mousePos.y - 400, 0);
             this.transform.position = cam.ScreenToWorldPoint(mousePos);
-            Debug.Log(cam.ScreenToWorldPoint(mousePos));
+            //Debug.Log(cam.ScreenToWorldPoint(mousePos));
         }
         if (this.putHatBackOnPumpkin)
         {

@@ -26,6 +26,7 @@ public class FlipThroughPumpkinsWhileScooping : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().sprite = this.pumpkinStates[this.currentState + 1];
             this.currentState++;
+            Debug.Log("called pumpkin booty nextstate");
         }
     }
 }
