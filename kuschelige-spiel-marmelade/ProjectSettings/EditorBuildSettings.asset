@@ -33,8 +33,14 @@ EditorBuildSettings:
     path: Assets/Scenes/CARVING_tsundara.unity
     guid: f9140eb22e5431347a2f2775c538f0c6
   - enabled: 1
-    path: Assets/Scenes/DragDropInventory.unity
+    path: Assets/Scenes/DragDropInventory_blaze.unity
+    guid: 74591f38032e01a40aa6ac31aec5ce17
+  - enabled: 1
+    path: Assets/Scenes/DragDropInventory_himbo.unity
     guid: 4b98919a1610f2c408de17273c45cfe5
+  - enabled: 1
+    path: Assets/Scenes/DragDropInventory_tsundara.unity
+    guid: dc966e5bfe57ac14e92ae6c23b4ed6f9
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 1c3a811c6438d5e4d8db343a49b34859
