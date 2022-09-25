@@ -10,5 +10,4 @@ public class ReduceHitboxToSprite : MonoBehaviour
     {
         this.GetComponent<Image>().alphaHitTestMinimumThreshold = 0.5f;
     }
-
 }
