@@ -5,9 +5,12 @@ using UnityEngine.UI;
 
 public class ReduceHitboxToSprite : MonoBehaviour
 {
+    private Image targetGraphic;
     // Start is called before the first frame update
     void Start()
     {
-        this.GetComponent<Image>().alphaHitTestMinimumThreshold = 0.5f;
+        targetGraphic = this.GetComponent<Image>();
+        targetGraphic.alphaHitTestMinimumThreshold = 0.5f;
+
     }
 }
