@@ -10,6 +10,7 @@ public class CutHereScript : MonoBehaviour
     Rigidbody2D pumpkinHatRigidBody;
     // this.isKniveActive = this.buttonManager.GetComponent<BottonManager>().isKniveActive;     <-- need to call this every time we want the value
     public GameObject sceneManager;
+    public GameObject noiseManager;
     Vector3 pumpkinHatPosition;
 
     // Start is called before the first frame update
@@ -33,13 +34,23 @@ public class CutHereScript : MonoBehaviour
     {
         if (this.buttonManager.GetComponent<ButtonManager>().isKniveActive)
         {
-            Debug.Log("WERE CUTTING!!");
-            // TODO: idk make the top of the pumpkin move a litte?
+            // move hat of pumpkin up a bit
             Vector3 totalMovement = new Vector3(0.0f, 0.1f, 0.0f);
             this.pumpkinHat.transform.position = this.pumpkinHatPosition + totalMovement;
-            // TODO: set to phase 1
+            // set to phase 1
             this.sceneManager.GetComponent<ScrapingoutPimpkinScript>().ChangeToPhase(1);
         }
     }
-    
+
+
+    void OnMouseDown()
+    {
+        if (this.buttonManager.GetComponent<ButtonManager>().isKniveActive)
+        {
+            // play carving nosie
+            this.noiseManager.GetComponent<NoiseManager>().PlayCarvingNoise();
+
+        }
+    }
+
 }
