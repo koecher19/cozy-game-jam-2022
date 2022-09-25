@@ -14,16 +14,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public float newScale = 1f;
     private Vector3 scaleVector;
 
-        void Start()
-    {
-        scaleVector.Set(newScale, newScale, 1);
-        this.transform.localScale = scaleVector;
-        
-        bigScale = new Vector3(2f, 2f, 2f);
-        smallScale = new Vector3(1f, 1f, 1f);
-        isBig = true;
-    }
-
     // So that Canvas and Slot actually works with one another
     private void Awake()
     {
@@ -31,12 +21,22 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
+        void Start()
+    {
+        scaleVector.Set(newScale, newScale, 1);
+        this.transform.localScale = scaleVector;
+        
+        bigScale = new Vector3(1f, 1f, 1f);
+        smallScale = new Vector3(0.5f, 0.5f, 0.5f);
+        isBig = true;
+    }
+
     // Begin to Drag the Item, so you can click on it and have it attached to ur mouse
    public void OnBeginDrag(PointerEventData eventData)
-   {
-    Debug.Log("OnBeginDrag");
-    canvasGroup.blocksRaycasts = false;
-   }
+    {
+        Debug.Log("OnBeginDrag");
+        canvasGroup.blocksRaycasts = false;
+    }
    
    // So you can Drag the Item everywhere
     public void OnDrag(PointerEventData eventData)
