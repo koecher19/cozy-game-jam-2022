@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollisionDetection : MonoBehaviour
 {
     public GameObject carvingManager;
+    public GameObject noiseManager;
 
     // Start is called before the first frame update
     void Start()
@@ -20,8 +21,9 @@ public class CollisionDetection : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("clicked on pumpkin hehe");
+        //Debug.Log("clicked on pumpkin hehe");
         this.carvingManager.GetComponent<CarvingToolButItsMadeByME>().Carve();
+        this.noiseManager.GetComponent<NoiseManager>().PlayCarvingNoise();
     }
     void OnMouseDrag()
     {

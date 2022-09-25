@@ -9,6 +9,7 @@ public class NoiseManager : MonoBehaviour
     public AudioSource[] scoopingNoise;
     public AudioSource[] carvingNoise;
     public AudioSource[] bowlNoise;
+    public AudioSource plopSound;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,11 @@ public class NoiseManager : MonoBehaviour
     public void PlaySpoonNoise()
     {
         this.spoonNoise.Play();
+    }
+
+    public void PlayPlopNoise()
+    {
+        this.plopSound.Play();
     }
 
     public void PlayScoopingNoise()
