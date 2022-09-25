@@ -231,7 +231,7 @@ MonoBehaviour:
   StringList:
   - As expected, I got picked. Tsundara, you probably heard of me before.
   - You better carefully take me with you.
-  NextSceneIndex: 2
+  NextSceneIndex: 4
 --- !u!82 &3185279752141420765
 AudioSource:
   m_ObjectHideFlags: 0
