@@ -151,6 +151,7 @@ MonoBehaviour:
   timeTillChange: 7
   StringList:
   - THANK YOU SO MUCH! I LOOK GREAT! \no(>w<)o
+  NextSceneIndex: 5
 --- !u!1 &6227346626727011623
 GameObject:
   m_ObjectHideFlags: 0

@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 882479936193493526}
   - component: {fileID: 7591986298081736057}
   - component: {fileID: 3185279752141420765}
+  - component: {fileID: 4144408501736197227}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -230,7 +231,7 @@ MonoBehaviour:
   StringList:
   - As expected, I got picked. Tsundara, you probably heard of me before.
   - You better carefully take me with you.
-  RepeatedAudioFile: {fileID: 0}
+  NextSceneIndex: 2
 --- !u!82 &3185279752141420765
 AudioSource:
   m_ObjectHideFlags: 0
@@ -327,3 +328,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4144408501736197227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7831731775333228292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1619385f1539541bfbd004b6e97ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
