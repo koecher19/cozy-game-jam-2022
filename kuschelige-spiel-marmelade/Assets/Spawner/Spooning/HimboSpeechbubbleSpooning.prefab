@@ -70,8 +70,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 35a6df7e9ec84974f9e00f51da62575c, type: 2}
-  m_sharedMaterial: {fileID: 1745277090280367206, guid: 35a6df7e9ec84974f9e00f51da62575c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -151,11 +151,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeTillDisappearing: 7
   StringList:
-  - OHOHOHOHO, THAT TICKLES!\n( #^-^# )
-  - "I LIKE BEING THAT CLOSE TO YOU!\\n( \u3003\u25BD\u3003)"
-  - "I\u2019M GONNA BE PRETTY INSIDE AND OUT!\\n(\u201Cw\u201D)"
-  - YOU WONDER WHERE ALL THIS VOLUME COMES FROM? YEAH MY PARENTS WONDERED TOO. \n(-_-)
-  - "NO ONE EVER MADE ME FEEL SUCH THINGS BEFORE! \\n( \u3003\u25BD\u3003)"
+  - OHOHOHOHO, THAT TICKLES! ( #^-^# )
+  - "I LIKE BEING THAT CLOSE TO YOU! ( #\xB0-\xB0#)"
+  - "I\u2019M GONNA BE PRETTY INSIDE AND OUT! (\u201Cw\u201D)"
+  - YOU WONDER WHERE ALL THIS VOLUME COMES FROM? YEAH MY PARENTS WONDERED TOO. (-_-)
+  - "NO ONE EVER MADE ME FEEL SUCH THINGS BEFORE! ( #\xB0-^#)"
   parentObjectToDisappear: {fileID: 6227346626727011623}
   spawner: {fileID: 0}
 --- !u!82 &145171124103227580
