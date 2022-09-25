@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovePumpkinHatAround : MonoBehaviour
 {
@@ -51,14 +52,42 @@ public class MovePumpkinHatAround : MonoBehaviour
         }
         else if(!this.buttonManager.GetComponent<ButtonManager>().isSpoonActive && !this.buttonManager.GetComponent<ButtonManager>().isKniveActive && this.putHatBackOnPumpkin)
         {
-            if (this.transform.position.x < 0.5f && this.transform.position.x > -0.5f 
-                && this.transform.position.y < 4.0f && this.transform.position.y > 2.0f)
+            // TODO: set these coordinates according to pumpkin type
+
+            if(SceneManager.GetActiveScene().name == "SPOONING_himbo")
             {
-                GetComponent<Rigidbody2D>().gravityScale = 0;
-                GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-                this.transform.position = new Vector3(0.0f, 3.807f, 0.0f);
-                // TODO enter next phase
-                this.sceneManager.GetComponent<ScrapingoutPimpkinScript>().ChangeToPhase(4);
+                if (this.transform.position.x < 0.5f && this.transform.position.x > -0.5f
+    && this.transform.position.y < 4.0f && this.transform.position.y > 2.0f)
+                {
+                    GetComponent<Rigidbody2D>().gravityScale = 0;
+                    GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+                    this.transform.position = new Vector3(0.0f, 3.807f, 0.0f);
+                    // TODO enter next phase
+                    this.sceneManager.GetComponent<ScrapingoutPimpkinScript>().ChangeToPhase(4);
+                }
+            }else if (SceneManager.GetActiveScene().name == "SPOONING_blaze")
+            {
+                if (this.transform.position.x < 1.5f && this.transform.position.x > -0.5f
+    && this.transform.position.y < 8.0f && this.transform.position.y > 3.0f)
+                {
+                    GetComponent<Rigidbody2D>().gravityScale = 0;
+                    GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+                    this.transform.position = new Vector3(0.752f, 3.914f +0.3f, 0.0f);
+                    // TODO enter next phase
+                    this.sceneManager.GetComponent<ScrapingoutPimpkinScript>().ChangeToPhase(4);
+                }
+            }
+            else if (SceneManager.GetActiveScene().name == "SPOONING_tsundara")
+            {
+                if (this.transform.position.x < 0.5f && this.transform.position.x > -0.5f
+    && this.transform.position.y < 4.0f && this.transform.position.y > 2.0f)
+                {
+                    GetComponent<Rigidbody2D>().gravityScale = 0;
+                    GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+                    this.transform.position = new Vector3(0.399f - 0.15f, -0.059f + 2.36f, 0.0f);
+                    // TODO enter next phase
+                    this.sceneManager.GetComponent<ScrapingoutPimpkinScript>().ChangeToPhase(4);
+                }
             }
         }
     }
