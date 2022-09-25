@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MAIN MENU.unity
     guid: 140522aac58e60e4f871e2a815f4427f
   - enabled: 1
+    path: Assets/Scenes/INTRO.unity
+    guid: f885a0068ac011644926ed7022b8860c
+  - enabled: 1
     path: Assets/Scenes/SPOONING.unity
     guid: 97d38b9ff171c1b43bdb2c2793010a2c
   - enabled: 1
@@ -20,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DragDropInventory.unity
     guid: 4b98919a1610f2c408de17273c45cfe5
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 1c3a811c6438d5e4d8db343a49b34859
   m_configObjects: {}

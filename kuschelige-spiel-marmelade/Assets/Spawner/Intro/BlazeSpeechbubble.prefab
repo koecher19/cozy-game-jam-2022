@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2245002811469807247}
   - component: {fileID: 7117540489014500550}
   - component: {fileID: 8211595323965015561}
+  - component: {fileID: 5704817963926185569}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -153,7 +154,19 @@ MonoBehaviour:
   - "yoooooooooooo\u2026 dude! Real\u2019 chill of you to pick me up ;-)"
   - Hehe. Name is Blaze. You probably know why. *zwinkie zwonkie*
   - "Let\u2019s gooo!... Do you know where we are going?"
-  NextSceneIndex: 1
+  NextSceneIndex: 2
+--- !u!114 &5704817963926185569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518636207800014845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1619385f1539541bfbd004b6e97ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1924192760926253791
 GameObject:
   m_ObjectHideFlags: 0

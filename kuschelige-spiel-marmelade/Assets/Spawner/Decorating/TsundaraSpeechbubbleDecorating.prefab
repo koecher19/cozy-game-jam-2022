@@ -230,6 +230,7 @@ MonoBehaviour:
   StringList:
   - "Doesn\u2019t look too bad I guess (I love it!)."
   - I bet that you are looking forward to do it again (So am I).
+  NextSceneIndex: 5
 --- !u!82 &3185279752141420765
 AudioSource:
   m_ObjectHideFlags: 0

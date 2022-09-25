@@ -50,7 +50,7 @@ public class TimedTexting : MonoBehaviour
         }
         else
         {
-            //this.GetComponent<SceneLoading>().loadScene;
+            this.GetComponent<SceneLoading>().loadScene(NextSceneIndex);
         }
     }
 }
