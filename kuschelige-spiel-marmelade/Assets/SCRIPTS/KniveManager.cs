@@ -28,7 +28,7 @@ public class KniveManager : MonoBehaviour
         {
             this.isKnivePickedUp = true;
             // disable image in button
-            this.kniveButton.GetComponent<Image>().enabled = false;
+            //this.kniveButton.GetComponent<Image>().enabled = false;
             // set carving as active
             this.carvingManager.GetComponent<CarvingToolButItsMadeByME>().SetToolStatus(true);
             // clip image of knive to cursor
@@ -39,7 +39,7 @@ public class KniveManager : MonoBehaviour
         {
             this.isKnivePickedUp = false;
             // enable image in button
-            this.kniveButton.GetComponent<Image>().enabled = true;
+            //this.kniveButton.GetComponent<Image>().enabled = true;
             // set carving as inactive
             this.carvingManager.GetComponent<CarvingToolButItsMadeByME>().SetToolStatus(false);
         }
