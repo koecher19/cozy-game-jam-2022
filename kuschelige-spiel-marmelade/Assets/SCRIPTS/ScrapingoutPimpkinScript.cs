@@ -25,6 +25,9 @@ public class ScrapingoutPimpkinScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // play background music
+        //GameObject.FindGameObjectWithTag("Music").GetComponent<ContinousMusic>().PlayMusic();
+
         ChangeToPhase(0);
         this.carvingButton.SetActive(false);
 
