@@ -11,17 +11,17 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private CanvasGroup canvasGroup;
     private Vector3 bigScale, smallScale;
     private bool isBig;
-    public float newScale = 1.6f;
+    public float newScale = 1f;
     private Vector3 scaleVector;
 
         void Start()
     {
+        scaleVector.Set(newScale, newScale, 1);
+        this.transform.localScale = scaleVector;
+        
         bigScale = new Vector3(2f, 2f, 2f);
         smallScale = new Vector3(1f, 1f, 1f);
         isBig = true;
-
-        scaleVector.Set(newScale, newScale, 1);
-        this.transform.localScale = scaleVector;
     }
 
     // So that Canvas and Slot actually works with one another
