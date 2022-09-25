@@ -7,17 +7,21 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     // Refer to the Canvas Group put into one Item
     [SerializeField] 
     private Canvas canvas;
-    
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     private Vector3 bigScale, smallScale;
     private bool isBig;
+    public float newScale = 1.6f;
+    private Vector3 scaleVector;
 
         void Start()
     {
         bigScale = new Vector3(2f, 2f, 2f);
-        smallScale = new Vector3(1.5f, 1.5f, 1.5f);
+        smallScale = new Vector3(1f, 1f, 1f);
         isBig = true;
+
+        scaleVector.Set(newScale, newScale, 1);
+        this.transform.localScale = scaleVector;
     }
 
     // So that Canvas and Slot actually works with one another
