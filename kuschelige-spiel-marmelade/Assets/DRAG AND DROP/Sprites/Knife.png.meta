@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kniffe_0
+      name: Knife_0
       rect:
         serializedVersion: 2
         x: 79
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0a4139cbacc3224ca45df276aea3a77
-      internalID: 330397720
+      spriteID: 392a0a36ebaac3a43b034e4b6ceeca9f
+      internalID: -1322810104
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kniffe_0: 330397720
+      Knife_0: -1322810104
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
