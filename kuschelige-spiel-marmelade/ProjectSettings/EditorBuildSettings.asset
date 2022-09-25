@@ -15,23 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/INTRO.unity
     guid: f885a0068ac011644926ed7022b8860c
   - enabled: 1
-    path: Assets/Scenes/SPOONING_blaze.unity
-    guid: 78861a92c3311ef4cb32f6f6821035eb
-  - enabled: 1
     path: Assets/Scenes/SPOONING_himbo.unity
     guid: 97d38b9ff171c1b43bdb2c2793010a2c
   - enabled: 1
-    path: Assets/Scenes/SPOONING_tsundara.unity
-    guid: a12c50f5e969b6f45be4d402eca69223
-  - enabled: 1
-    path: Assets/Scenes/CARVING_blaze.unity
-    guid: ef4b7bbf853e522429d86bc43139592c
-  - enabled: 1
     path: Assets/Scenes/CARVING_himbo.unity
     guid: 886037a93e8f1844ba762e78820572ff
-  - enabled: 1
-    path: Assets/Scenes/CARVING_tsundara.unity
-    guid: f9140eb22e5431347a2f2775c538f0c6
   - enabled: 1
     path: Assets/Scenes/DragDropInventory.unity
     guid: 4b98919a1610f2c408de17273c45cfe5

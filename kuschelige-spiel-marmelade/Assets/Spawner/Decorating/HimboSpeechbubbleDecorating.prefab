@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 827173081120954988}
   - component: {fileID: 4835703256342493158}
   - component: {fileID: 4566405179392447350}
-  - component: {fileID: 5031494315122093873}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -102,8 +101,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -152,19 +151,7 @@ MonoBehaviour:
   timeTillChange: 7
   StringList:
   - THANK YOU SO MUCH! I LOOK GREAT! o(>w<)o
-  NextSceneIndex: 11
---- !u!114 &5031494315122093873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3749515067982904861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1619385f1539541bfbd004b6e97ff1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  NextSceneIndex: 5
 --- !u!1 &6227346626727011623
 GameObject:
   m_ObjectHideFlags: 0
