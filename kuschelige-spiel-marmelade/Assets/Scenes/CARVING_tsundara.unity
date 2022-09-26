@@ -489,8 +489,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomSpawnerSpooning: {fileID: 614169191}
-  minWait: 4
-  maxWait: 10
+  minWait: 8
+  maxWait: 12
 --- !u!114 &614169191 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -9063951462144581897, guid: d9420c0d43363d6448ab40cf35a281dc, type: 3}

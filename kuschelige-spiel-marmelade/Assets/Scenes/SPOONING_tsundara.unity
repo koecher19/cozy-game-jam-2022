@@ -1159,8 +1159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomSpawnerSpooning: {fileID: 584088198}
-  minWait: 4
-  maxWait: 10
+  minWait: 8
+  maxWait: 12
 --- !u!1 &591104603
 GameObject:
   m_ObjectHideFlags: 0
