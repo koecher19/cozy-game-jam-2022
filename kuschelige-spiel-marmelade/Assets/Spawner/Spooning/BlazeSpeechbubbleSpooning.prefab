@@ -95,12 +95,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.5
-  m_fontSizeBase: 12.5
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 12.51
-  m_fontSizeMax: 72
+  m_fontSizeMin: 15
+  m_fontSizeMax: 18
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 29.892189, y: 5.6692123, z: 24.738388, w: -12.896246}
+  m_margin: {x: 29.892189, y: 5.6692123, z: 24.738388, w: -7.6771297}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: 8056473227704484022}
   - component: {fileID: 1518780367471240965}
   - component: {fileID: 1989301873456072886}
+  - component: {fileID: 8890545758983564074}
   m_Layer: 5
   m_Name: BlazeSpeechbubbleSpooning
   m_TagString: Untagged
@@ -330,3 +331,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8890545758983564074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924192760926253791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 369da097642ed884c951d98023ffe3ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newScale: 1.8

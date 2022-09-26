@@ -265,6 +265,7 @@ GameObject:
   - component: {fileID: 2022351985668013044}
   - component: {fileID: 988667953712155529}
   - component: {fileID: 2263743670972622173}
+  - component: {fileID: 470893095541349307}
   m_Layer: 5
   m_Name: HimboSpeechbubbleSpooning
   m_TagString: Untagged
@@ -331,3 +332,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &470893095541349307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6227346626727011623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 369da097642ed884c951d98023ffe3ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newScale: 1.5
